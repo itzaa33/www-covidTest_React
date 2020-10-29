@@ -1,0 +1,111 @@
+
+.container-lists
+{
+    width: 100%;
+    height: 100%;
+
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-gap: 20px;
+
+    overflow-y: auto;
+}
+
+.list
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list > img
+{
+    width: 100%;
+    
+    margin: auto;
+    object-fit: cover;
+}
+
+.list > .description
+{
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 12px;
+}
+
+.description > div
+{
+    text-align: center;
+    font-family: "Myriad Pro";
+    margin: 2px 0;
+}
+
+.description .region-name
+{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  
+    text-overflow: ellipsis;
+
+    font-size: 0.75em;
+    color: #90e36c;
+
+    overflow: hidden;
+}
+
+.description .region-infected
+{
+    font-size: 0.65em;
+    color: white;
+}
+
+.description .region-population
+{
+    font-size: 0.6em;
+    color: #939393;
+}
+
+@media(min-width: 768px)
+{
+    .container-lists
+    {
+        grid-gap: 40px 20px;
+        grid-template-columns:auto auto auto;
+    }
+
+    .list > .description
+    {
+        padding-top: 16px;
+    }
+
+    .description .region-name
+    {
+        font-size: 1em;
+    }
+
+    .description .region-infected
+    {
+        font-size: 0.9em;
+    }
+
+    .description .region-population
+    {
+        font-size: 0.8em;
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .container-lists
+    {
+        grid-gap: 60px 20px;
+    }
+}
