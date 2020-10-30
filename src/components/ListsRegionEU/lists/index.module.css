@@ -30,7 +30,6 @@
     width: 62%;
 
     margin:auto;
-    margin-bottom: 12px;
     object-fit: cover;
 }
 
@@ -72,11 +71,6 @@
         width: 80%;
     }
     
-    .content > img
-    {
-        margin-bottom: 20px;
-    }
-
     .container-description > .title
     {
         font-size: 1.3em;

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios'
 import Lists from './lists'
 import Arrow from './Arrow'
+import Bullet from './Bullet'
 import * as Type from './type'
 import Css from './index.module.css';
 
@@ -114,12 +115,7 @@ const Comp = () =>
                 <div id={id} className={`${Css["glide"]} glide`}>
                     <Lists region={regionEU} />
                     <Arrow />
-                    {/* ----------------bullet----------------*/}
-                    {/* <div className="glide__bullets" data-glide-el="controls[nav]">
-                        <button className="glide__bullet" data-glide-dir="=0"></button>
-                        <button className="glide__bullet" data-glide-dir="=1"></button>
-                        <button className="glide__bullet" data-glide-dir="=2"></button>
-                    </div> */}
+                    <Bullet region={regionEU}/>
                 </div>
             </div>
         </div>

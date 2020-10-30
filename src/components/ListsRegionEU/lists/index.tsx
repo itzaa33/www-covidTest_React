@@ -32,19 +32,19 @@ const Comp: React.FC<Props> = (
                                         </div>
                                         <div className={Css["description"]}>
                                             <div>
-                                                <label>Capital: </label>
+                                                <label>เมืองหลวง: </label>
                                                 {item.capital}
                                             </div>
                                             <div>
-                                                <label>Population: </label>
-                                                {item.population}
+                                                <label>ประชากร: </label>
+                                                {item.population} คน
                                             </div>
                                             <div>
-                                                <label>Currencies: </label>
+                                                <label>สกุลเงิน: </label>
                                                 {item.currencies.toString()}
                                             </div>
                                             <div>
-                                                <label>Region: </label>
+                                                <label>ภูมิภาค: </label>
                                                 {item.region}
                                             </div>
                                         </div>

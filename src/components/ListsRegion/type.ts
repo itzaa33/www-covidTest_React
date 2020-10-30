@@ -10,7 +10,7 @@ export type RegionMerge = {
 export type RegionAll = {
     name: string;
     population: number;
-    countryCode: string;
+    alpha2Code: string;
     flag: string;
 }
 

@@ -29,10 +29,10 @@ const Comp: React.FC<Props> = (
                                     {`${item.name} (${item.countryCode})`}
                                 </div>
                                 <div className={Css["region-infected"]}>
-                                    Infected: {item.infected}
+                                    ผู้ติดเชื้อ: {item.infected} คน
                                 </div>
                                 <div className={Css["region-population"]}>
-                                    Population: {item.population}
+                                    ประชากร: {item.population} คน
                                 </div>
                             </div>
                         </div>
