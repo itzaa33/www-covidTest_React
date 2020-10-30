@@ -1,0 +1,102 @@
+
+.glide__track
+{
+    height:100%;
+    
+    display:flex;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+.glide__slide
+{
+    margin:auto;
+}
+
+.content
+{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+.content > img
+{
+    width: 62%;
+
+    margin:auto;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+.content > .container-description
+{
+    font-family: "kanit";
+}
+
+.container-description > .title
+{
+    width: 100%;
+
+    font-size: 0.75em;
+    text-align: center;
+
+    color:#90e36c;
+}
+
+.container-description > .description
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    font-size: 0.55em;
+}
+
+.description > div
+{
+    width: 100%;
+
+    text-align: center;
+}
+
+@media(min-width: 768px)
+{
+    .content
+    {
+        width: 80%;
+    }
+    
+    .content > img
+    {
+        margin-bottom: 20px;
+    }
+
+    .container-description > .title
+    {
+        font-size: 1.3em;
+    }
+
+    .container-description > .description
+    {
+        font-size: 0.9em;
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .container-description > .title
+    {
+        font-size: 1.5em;
+    }
+
+    .container-description > .description
+    {
+        font-size: 1em;
+    }
+}

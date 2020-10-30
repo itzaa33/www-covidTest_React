@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// css
+import './index.css';
+import '@glidejs/glide/dist/css/glide.core.min.css';
+import '@glidejs/glide/dist/css/glide.theme.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
