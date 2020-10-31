@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  web:
+    container_name: nginx-garena-test
+    image: garena-test:latest
+    ports:
+      - "3002:80"
+    expose:
+      - 80
+    volumes: 
+      - E:\www-covidTest_React\nginx.conf:/etc/nginx/conf.d/default.conf    # for OS window
+      # - ./nginx.conf:/etc/nginx/conf.d/default.conf    //for OS mac
+
+      # docker build -t garena-test .
+      # docker-compose up -d
+      # docker-compose down
